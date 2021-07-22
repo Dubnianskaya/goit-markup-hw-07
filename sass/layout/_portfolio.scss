@@ -5,11 +5,11 @@
     margin-bottom: 50px;
   }
   
-  .filter-item:not(:last-child) {
+  .filter-list__item:not(:last-child) {
     margin-right: 8px;
   }
   
-  .filter-btn {
+  .filter-list__btn {
     padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
@@ -31,33 +31,29 @@
       border-radius: 4px;
     }
     
-    &.current {
-      color: #FFFFFF;
-      background: var(--accent-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-      border-radius: 4px;
-    }
   }
 
-  .portfolio-list {
+  .filter-list__btn--current {
+    color: #FFFFFF;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+  .portfolio {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
   }
   
-  .portfolio-item {
+  .portfolio__item {
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
   }
-  
-  .portfolio-item-border {
-    border: 1px solid #EEEEEE;
-    padding: 20px 24px;
-  }
-  
-  .portfolio-link {
+
+  .portfolio__link {
     display: block;
     color: inherit;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,33 +63,18 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    &:hover .portfolio-thumb,
-    &:focus .portfolio-thumb {
+    &:hover .product__thumb,
+    &:focus .product__thumb {
       transform: translateY(0%);
     }
   }
-  
-  
-  .portfolio-item-name {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
-  }
-  
-  .portfolio-item-type {
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: var(--secondary-font-color);
-  }
-  
-  .portfolio-box {
+
+  .product {
     position: relative;
     overflow: hidden;
   }
-  
-  .portfolio-thumb {
+
+  .product__thumb {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -109,11 +90,30 @@
     overflow: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .portfolio-description {
+
+  .product__description {
     font-size: 18px;
     line-height: 1,56;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+  }
+  
+  .product__border {
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+  }
+  
+  .product__name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  
+  .product__type {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-font-color);
   }
   

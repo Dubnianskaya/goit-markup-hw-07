@@ -2,18 +2,22 @@
   padding-top: 47px;
 }
 
-.servises-list {
+.servises__title {
+  margin-bottom: 50px;
+}
+
+.servises__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
   
-.servises-box {
+.servises__box {
   position: relative;
 }
   
-.servises-thumb {
+.servises__thumb {
   position: absolute;
   display: flex;
   align-items: center;
@@ -25,8 +29,12 @@
   background: rgba(47, 48, 58, 0.8);
 }
   
-.servises-item {
+.servises__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.servises__description {
+  @extend %uppercase;
 }

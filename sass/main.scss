@@ -1,6 +1,7 @@
 // UTILS
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/placeholders";
 
 // BASE
 @import "./base/common";
@@ -8,9 +9,8 @@
 
 // COMPONENTS
 @import "./components/logo";
-@import "./components/section-title";
-@import "./components/uppercase";
-@import "./components/social-link";
+@import "./components/title";
+@import "./components/social-list";
 @import "./components/button";
 @import "./components/backdrop";
 @import "./components/modal-window";
